@@ -23,8 +23,4 @@ if __name__ == "__main__":
     password = "SuJsSR8y5TxBxdSfauvjfrR8CbEveaFTzKzYQ4NEUY8"
 
     conn = Neo4jConnection(uri, user, password)
-    # Test query
-    results = conn.query("MATCH (n) RETURN n LIMIT 5")
-    for record in results:
-        print(record)
     conn.close()
